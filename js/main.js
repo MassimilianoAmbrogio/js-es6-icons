@@ -127,6 +127,7 @@ $(document).ready(function() {
     const types = getType(coloredIcons);
     // Gen options
     genOption(types, select);
+    
     // Event change
     select.change(() => {
         const selected = select.val();
@@ -167,6 +168,7 @@ function colorIcons(icons, colors) {
     // Get types
     const types = getType(icons);
     console.log(types);
+
     // Assign color by type
     const coloredIcons = icons.map((icon) => {
         const indexType = types.indexOf(icon.type);
